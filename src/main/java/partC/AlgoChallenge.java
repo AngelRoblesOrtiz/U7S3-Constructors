@@ -13,8 +13,14 @@ public class AlgoChallenge {
      */
 
     public static Integer doubleTheSum(int a, int b) {
+        int response = 0;
+        if (a != b) {
+            response = a + b;
+        } else {
+            response += (a + b) * 2;
+        }
 
-        return null;
+        return response;
     }
 
 
@@ -29,8 +35,8 @@ public class AlgoChallenge {
      */
 
     public static Boolean lookOut10(int a, int b) {
-
-        return null;
+        boolean response = a == 10 || b == 10 || (a + b) == 10;
+        return response;
     }
 
 }

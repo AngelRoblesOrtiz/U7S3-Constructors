@@ -1,19 +1,16 @@
 package partB;
 
 public class Constructor {
-    public static String Constructor() {
-        String response = "";
+    String name;
 
-        /**
-         * Your code goes here
-         */
-
-
-        return response;
+    public Constructor() {
+        System.out.println("The constructor is being called:");
+        name = "Angel";
     }
 
+
     public static void main(String[] args) {
-        String output = Constructor();
-        System.out.print(output);
+        Constructor item = new Constructor();
+        System.out.println("The name is " + item.name);
     }
 }

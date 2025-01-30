@@ -4,11 +4,15 @@ public class Player {
 
     //Fields
     public String name;
-    public double height;
-    public int yearsInLeague;
+    public String height;
+    public int years;
 
     //Constructor
-
+    public Player(String name, String height, int years) {
+        this.name = name;
+        this.height = height;
+        this.years = years;
+    }
 
     //Methods
     public void think(){
